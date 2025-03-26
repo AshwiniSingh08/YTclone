@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.youtube-logo {
+    height: 24px;
+    cursor: pointer;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    width: 600px;
+}
+
+.search-bar {
+    width: 500px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    height: 35px;
+    width: 50px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: -40px;
+}
+
+.mic-icon {
+    font-size: 20px;
+    color: gray;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-icon {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar_category {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.sidebar_category:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar_category i {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.video-container {
+    margin-left: 220px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.video {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video img {
+    width: 100%;
+    height: 170px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.video-info {
+    display: flex;
+    width: 100%;
+    padding-top: 8px;
+}
+
+.video-info i {
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.video-info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-info h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.video-info p {
+    font-size: 14px;
+    color: gray;
+    margin: 2px 0;
+}
